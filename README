@@ -1,0 +1,10 @@
+Simple breakout adapter for the TSL1401CL, which is a replacement chip for TSL1401R-LF
+
+The pads are larger than the footprint of the TSL1401CL so you can wick solder underneath the chip
+
+
+Karl Bellve
+Biomedical Imaging Group
+Program in Molecular Medicine
+University of Massachusetts Medical School
+
