@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -137,10 +137,6 @@
 </package>
 <package name="TSL1401CL">
 <description>TSL1401CL    SMD Version of the TSL1401</description>
-<wire x1="9.25" y1="9.25" x2="-9.25" y2="9.25" width="1.5" layer="51"/>
-<wire x1="9.25" y1="-9.25" x2="-9.25" y2="-9.25" width="1.5" layer="51"/>
-<wire x1="-9.25" y1="9.25" x2="-9.25" y2="-9.25" width="1.5" layer="51"/>
-<wire x1="9.25" y1="9.25" x2="9.25" y2="-9.25" width="1.5" layer="51"/>
 <wire x1="1.5" y1="4.7" x2="-1.5" y2="4.7" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-4.7" x2="-1.5" y2="-4.7" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="0.7" x2="-1.5" y2="-0.7" width="0.127" layer="21"/>
@@ -153,8 +149,8 @@
 <wire x1="1.5" y1="-4.7" x2="1.5" y2="-4.3" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="4.7" x2="-1.5" y2="4.3" width="0.127" layer="21"/>
 <wire x1="1.5" y1="4.7" x2="1.5" y2="4.3" width="0.127" layer="21"/>
-<circle x="0" y="11" radius="1.9" width="1.1" layer="51"/>
-<circle x="0" y="-11" radius="1.9" width="1.1" layer="51"/>
+<circle x="0" y="11" radius="1.55" width="1.5" layer="51"/>
+<circle x="0" y="-11" radius="1.55" width="1.5" layer="51"/>
 <smd name="SI" x="-1.4" y="3.45" dx="1.4" dy="2" layer="1" rot="R90"/>
 <smd name="CLK" x="-1.4" y="1.25" dx="2" dy="0.8" layer="1"/>
 <smd name="AO" x="-1.4" y="-1.25" dx="2" dy="0.8" layer="1"/>
@@ -164,23 +160,33 @@
 <smd name="GND1" x="1.4" y="1.25" dx="2" dy="0.8" layer="1"/>
 <smd name="NC1" x="1.4" y="3.75" dx="2" dy="0.8" layer="1"/>
 <text x="-3.5" y="2.9" size="1.27" layer="21">1</text>
-<hole x="0" y="11" drill="2.8"/>
-<hole x="0" y="-11" drill="2.8"/>
+<hole x="0" y="11" drill="1.6"/>
+<hole x="0" y="-11" drill="1.6"/>
+<wire x1="-7.85" y1="4.68" x2="-7.85" y2="-4.68" width="1" layer="51"/>
+<wire x1="7.85" y1="4.68" x2="7.85" y2="-4.68" width="1" layer="51"/>
+<wire x1="-4.78" y1="8.31" x2="4.78" y2="8.31" width="1" layer="51"/>
+<wire x1="-4.78" y1="-8.31" x2="-4.68" y2="-8.31" width="1" layer="51"/>
+<wire x1="-4.68" y1="-8.31" x2="4.68" y2="-8.31" width="1" layer="51"/>
+<wire x1="4.68" y1="-8.31" x2="4.78" y2="-8.31" width="1" layer="51"/>
+<wire x1="-7.85" y1="4.68" x2="-4.78" y2="8.31" width="1" layer="51" curve="-90"/>
+<wire x1="4.78" y1="8.31" x2="7.85" y2="4.68" width="1" layer="51" curve="-90"/>
+<wire x1="-4.68" y1="-8.31" x2="-7.85" y2="-4.68" width="1" layer="51" curve="-90"/>
+<wire x1="7.85" y1="-4.68" x2="4.68" y2="-8.31" width="1" layer="51" curve="-90"/>
 </package>
 <package name="M05JST-PTH">
-<pad name="P$1" x="0" y="-4" drill="0.7" shape="long"/>
-<pad name="P$2" x="0" y="-2" drill="0.7" shape="long"/>
-<pad name="P$3" x="0" y="0" drill="0.7" shape="long"/>
-<pad name="P$4" x="0" y="2" drill="0.7" shape="long"/>
-<pad name="P$5" x="0" y="4" drill="0.7" shape="long"/>
-<wire x1="1.6" y1="6" x2="-6" y2="6" width="0.127" layer="21"/>
-<wire x1="0" y1="5" x2="1.6" y2="5" width="0.127" layer="21"/>
-<wire x1="1.6" y1="5" x2="1.6" y2="6" width="0.127" layer="21"/>
-<wire x1="1.6" y1="-6" x2="-6" y2="-6" width="0.127" layer="21"/>
-<wire x1="0" y1="-5" x2="1.6" y2="-5" width="0.127" layer="21"/>
-<wire x1="1.6" y1="-6" x2="1.6" y2="-5" width="0.127" layer="21"/>
-<wire x1="2" y1="-3" x2="2" y2="-5" width="0.127" layer="21"/>
-<wire x1="-6" y1="6" x2="-6" y2="-6" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="-4" drill="0.7"/>
+<pad name="P$2" x="0" y="-2" drill="0.7"/>
+<pad name="P$3" x="0" y="0" drill="0.7"/>
+<pad name="P$4" x="0" y="2" drill="0.7"/>
+<pad name="P$5" x="0" y="4" drill="0.7"/>
+<wire x1="1.6" y1="6" x2="-6.5" y2="6" width="0.2032" layer="21"/>
+<wire x1="0" y1="5" x2="1.6" y2="5" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="5" x2="1.6" y2="6" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="-6" x2="-6.5" y2="-6" width="0.2032" layer="21"/>
+<wire x1="0" y1="-5" x2="1.6" y2="-5" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="-6" x2="1.6" y2="-5" width="0.2032" layer="21"/>
+<wire x1="2.635" y1="-3" x2="2.635" y2="-5" width="0.2032" layer="21"/>
+<wire x1="-6.5" y1="6" x2="-6.5" y2="-6" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
